@@ -17,7 +17,7 @@ public class ContatoServiceImpl implements ContatoService {
 
 	public ContatoServiceImpl() {
 	}
-	
+
 	@Transactional
 	public void insere() {
 		contatoRepository.save(new Contato("João", "(88)3452-4567"));
@@ -25,6 +25,7 @@ public class ContatoServiceImpl implements ContatoService {
 		contatoRepository.save(new Contato("José", "(88)3452-4569"));
 	}
 
+	@Transactional
 	public List<Contato> findAll() {
 		List<Contato> l = contatoRepository.findAll();
 		return l;
