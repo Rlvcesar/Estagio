@@ -7,16 +7,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Contato {
+public class Contatos {
 
-	public Contato() {
+	public Contatos() {
 		super();
 	}
 
-	public Contato(String nome, String fone) {
+	public Contatos(String nome, String telefone) {
 		super();
 		this.nome = nome;
-		this.fone = fone;
+		this.telefone = telefone;
 	}
 
 	@Id
@@ -26,7 +26,7 @@ public class Contato {
 	@Column(nullable=false)
 	private String nome;
 
-	private String fone;
+	private String telefone;
 
 	public Integer getId() {
 		return id;
@@ -45,16 +45,16 @@ public class Contato {
 	}
 
 	public String getFone() {
-		return fone;
+		return telefone;
 	}
 
 	public void setFone(String fone) {
-		this.fone = fone;
+		this.telefone = telefone;
 	}
 
 	@Override
 	public String toString() {
-		return "Contato [id=" + id + ", nome=" + nome + ", fone=" + fone + "]";
+		return "Contato [id=" + id + ", nome=" + nome + ", telefone=" + telefone + "]";
 	}
 
 }

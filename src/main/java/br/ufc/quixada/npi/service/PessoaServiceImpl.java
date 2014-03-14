@@ -20,9 +20,9 @@ public class PessoaServiceImpl implements PessoaService {
 	 */
 	@Transactional
 	public void inserir() {
-		pessoaRepository.save(new Pessoa("Maria", "Jose"));
-		pessoaRepository.save(new Pessoa("Beto", "Barbosa"));
-		pessoaRepository.save(new Pessoa("Ze", "Cantor"));
+		pessoaRepository.save(new Pessoa("Marina", "Sousa"));
+		pessoaRepository.save(new Pessoa("Alberto", "Roberto"));
+		pessoaRepository.save(new Pessoa("Zé", "Augusto"));
 	}
 
 	/* (non-Javadoc)

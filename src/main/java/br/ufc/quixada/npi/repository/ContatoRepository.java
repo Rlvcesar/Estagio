@@ -2,12 +2,12 @@ package br.ufc.quixada.npi.repository;
 
 import java.util.List;
 
-import br.ufc.quixada.npi.model.Contato;
+import br.ufc.quixada.npi.model.Contatos;
 
 public interface ContatoRepository {
 
-	public abstract void save(Contato c);
+	public abstract void save(Contatos c);
 
-	public abstract List<Contato> findAll();
+	public abstract List<Contatos> findAll();
 	
 }

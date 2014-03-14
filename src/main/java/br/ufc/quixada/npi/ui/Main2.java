@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-import br.ufc.quixada.npi.model.Contato;
+import br.ufc.quixada.npi.model.Contatos;
 import br.ufc.quixada.npi.service.ContatoService;
 
 @Component
@@ -24,9 +24,9 @@ public class Main2 {
 			System.out.println("Não foi possível realizar a inserção");
 		}
 		
-		List<Contato> l = main.cs.findAll();
+		List<Contatos> l = main.cs.findAll();
 
-	    for (Contato c : l) {
+	    for (Contatos c : l) {
 	    	System.out.println(c);
 	    }
 		ctx.close();

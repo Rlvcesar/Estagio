@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import br.ufc.quixada.npi.model.Contato;
+import br.ufc.quixada.npi.model.Contatos;
 import br.ufc.quixada.npi.repository.ContatoRepository;
 
 @Repository
@@ -16,7 +16,7 @@ public class JpaContatoRepositoryImpl implements ContatoRepository {
 	@PersistenceContext
 	private EntityManager em;
 
-	public void save(Contato c) {
+	public void save(Contatos c) {
 		if (c.getId() == null) {
 			em.persist(c);
 		} else {
@@ -24,8 +24,8 @@ public class JpaContatoRepositoryImpl implements ContatoRepository {
 		}
 	}
 
-	public List<Contato> findAll() {
-		return em.createQuery("from Contato", Contato.class).getResultList();
+	public List<Contatos> findAll() {
+		return em.createQuery("from Contato", Contatos.class).getResultList();
 	}
 
 }

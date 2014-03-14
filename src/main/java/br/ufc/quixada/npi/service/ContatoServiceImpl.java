@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.ufc.quixada.npi.model.Contato;
+import br.ufc.quixada.npi.model.Contatos;
 import br.ufc.quixada.npi.repository.ContatoRepository;
 
 @Service
@@ -20,14 +20,14 @@ public class ContatoServiceImpl implements ContatoService {
 
 	@Transactional
 	public void insere() {
-		contatoRepository.save(new Contato("João", "(88)3452-4567"));
-		contatoRepository.save(new Contato("Maria", "(88)3452-4568"));
-		contatoRepository.save(new Contato("José", "(88)3452-4569"));
+		contatoRepository.save(new Contatos("Carlos", "(88)3581-1234"));
+		contatoRepository.save(new Contatos("Marina", "(88)3412-9876"));
+		contatoRepository.save(new Contatos("Roberto", "(88)3412-8989"));
 	}
 
 	@Transactional
-	public List<Contato> findAll() {
-		List<Contato> l = contatoRepository.findAll();
+	public List<Contatos> findAll() {
+		List<Contatos> l = contatoRepository.findAll();
 		return l;
 	}
 

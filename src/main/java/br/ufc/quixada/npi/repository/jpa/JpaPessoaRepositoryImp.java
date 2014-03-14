@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import br.ufc.quixada.npi.model.Contato;
+import br.ufc.quixada.npi.model.Contatos;
 import br.ufc.quixada.npi.model.Pessoa;
 import br.ufc.quixada.npi.repository.PessoaRepository;
 
